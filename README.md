@@ -18,10 +18,12 @@ make
 **server**
 * --encrypt=filename
 * --port=# - Mandatory option
+
 **client**
 * --encrypt=filename
 * --log=filename
 * --port=# - Mandatory option
+
 For the key file, you can write any string in a plain text file. Also, the port number must be greater than 1024.
 ### Notice
 * The key file names and the port numbers must match.
