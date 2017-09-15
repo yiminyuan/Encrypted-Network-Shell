@@ -35,8 +35,11 @@ Then run the client by using this command:
 $ ./client --port=8000
 ```
 Finally, type any command in the client and see what happens. :)
+
 You can type Ctrl+D to shutdown the server and Ctrl+C to send a SIGINT to the server.
 ### Notice
 * The key file names and the port numbers must match.
 * If you specify both --encrypt and --log options, the log file will store encrypted unreadable info.
 * Since the client is running with non-canonical input mode, the "escape" or "delete" key will be treated as a character.
+## Acknowledgments
+This code demo was modified based on my course project 1B: Encrypted Network Communication of CS 111: Operating Systems Principles at University of California, Los Angeles. You can check out the [spec](https://lasr.cs.ucla.edu/classes/cs111_summer2017/projects/p1/P1B.html) if you are interested in.
