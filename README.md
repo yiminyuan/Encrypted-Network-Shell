@@ -17,14 +17,26 @@ make
 ### Options
 **server**
 * --encrypt=filename
-* --port=# - Mandatory option
+* --port=# (Mandatory option)
 
 **client**
 * --encrypt=filename
 * --log=filename
-* --port=# - Mandatory option
+* --port=# (Mandatory option)
 
 For the key file, you can write any string in a plain text file. Also, the port number must be greater than 1024.
+### Running
+Assume the port number is 8000. First, you should run the server by using this command:
+```
+$ ./server --port=8000
+```
+Then run the client by using this command:
+```
+$ ./client --port=8000
+```
+Finally, type any command in the client and see what happens. :)
+You can type Ctrl+D to shutdown the server and Ctrl+C to send a SIGINT to the server.
 ### Notice
 * The key file names and the port numbers must match.
 * If you specify both --encrypt and --log options, the log file will store encrypted unreadable info.
+* Since the client is running with non-canonical input mode, the "escape" or "delete" key will be treated as a character.
