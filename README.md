@@ -10,9 +10,13 @@ For example, on Fedora, you can install MCrypt library by using this command:
 $ sudo dnf install libmcrypt-devel
 ```
 ## Usage
-You can compile the code to produce executable programs by simply running:
+You can compile the code by simply running:
 ```
-make
+$ make
+```
+and delete the executable programs by using:
+```
+$ make clean
 ```
 ### Options
 **server**
