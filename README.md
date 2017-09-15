@@ -3,9 +3,26 @@ A multi-process telnet-like server and client.
 ## Getting Started
 Please make sure the following dependencies have been installed before compiling.
 ### Dependencies
-* [MCrypt](http://mcrypt.sourceforge.net/) - a thread-safe encryption algorithms library.
+* [MCrypt](http://mcrypt.sourceforge.net/) - A thread-safe encryption algorithms library.
 ### Installing
-For example, on Fedora, you can install MCrypt library by using this command
+For example, on Fedora, you can install MCrypt library by using this command:
 ```
 $ sudo dnf install libmcrypt-devel
 ```
+## Usage
+You can compile the code to produce executable programs by simply running:
+```
+make
+```
+### Options
+**server**
+* --encrypt=filename
+* --port=# - Mandatory option
+**client**
+* --encrypt=filename
+* --log=filename
+* --port=# - Mandatory option
+For the key file, you can write any string in a plain text file. Also, the port number must be greater than 1024.
+### Notice
+* The key file names and the port numbers must match.
+* If you specify both --encrypt and --log options, the log file will store encrypted unreadable info.
